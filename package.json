@@ -15,9 +15,13 @@
   "main": "dist/index.js",
   "keywords": [
     "intercom",
-    "api"
+    "api",
+    "node",
+    "glitch",
+    "express"
   ],
   "dependencies": {
+    "express": "^4.17.1",
     "bluebird": "^3.3.4",
     "htmlencode": "^0.0.4",
     "lodash": "^4.17.15",
@@ -41,7 +45,8 @@
   },
   "scripts": {
     "prepublish": "gulp prepublish",
-    "test": "gulp"
+    "test": "gulp",
+    "start": "node server.js"
   },
   "engines": {
     "node": ">= v0.10.0"
