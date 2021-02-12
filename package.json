@@ -46,7 +46,7 @@
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp",
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "engines": {
     "node": ">= v0.10.0"
