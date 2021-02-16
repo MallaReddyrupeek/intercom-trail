@@ -7,7 +7,6 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static(__dirname));
-
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static("public"));
 
@@ -53,7 +52,7 @@ for (var i = 1; i <= 5; i++) {
 
 var customerDetails = {};
 
-app.post("/initialize", (request, response) => {
+app.post("/intercom/initialize", (request, response) => {
   const body = request.body;
   console.log("body of intialize = ", body);
   response.send({
@@ -135,7 +134,7 @@ app.post("/initialize", (request, response) => {
 //   });
 // });
 
-app.post("/submit2", (request, response) => {
+app.post("/intercom/submit2", (request, response) => {
   const body = request.body;
   console.log("body of submit2 = ", body);
   var componentText = optiontoText[body["input_values"]["single-select-1"]];
@@ -174,7 +173,7 @@ app.post("/submit2", (request, response) => {
   });
 });
 
-app.post("/sheetform", function(request, response) {
+app.post("/intercom/sheetform", function(request, response) {
 
   var dataString =
   "?email=" +
@@ -208,7 +207,7 @@ app.post("/sheet", (request, response) => {
   });
 });
 
-app.post("/feedbackFormData", (request, response) => {
+app.post("/intercom/feedbackFormData", (request, response) => {
   const body = request.body;
   console.log("body of feedbackFormData = ", body);
   response.send({
