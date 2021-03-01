@@ -164,7 +164,7 @@ app.post("/intercom/submit2", (request, response) => {
             style: "primary",
             action: {
               type: "sheet",
-              url: "https://glow-troubled-timbale.glitch.me/sheetform"
+              url: "https://api-beta.rupeek.co/rupeek-quick-2/intercom/sheetform"
             }
           }
         ]
